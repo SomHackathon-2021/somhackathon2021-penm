@@ -25,7 +25,7 @@ const tiendas = [
 export default function stores() {
   return (
     <>
-      <Header showTransparent="false" />
+      <Header showTransparent={false} />
       <main className={styles.main}>
         <div className={styles.filters}>
           {filtros.map((filter) => (

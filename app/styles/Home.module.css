@@ -5,7 +5,8 @@
 .cabecera {
   position: fixed;
   height: 90px;
-  background-color: aqua;
+  background-color: var(--bdazzled-blue);
+  color: white;
   width: 100vw;
   display: grid;
   grid-template-columns: 20% 1fr 20%;
@@ -28,7 +29,7 @@
   height: 90vh;
   width: 100vw;
   top: 0;
-  background-color: red;
+  background-color: var(--burnt-sienna);
   display: grid;
   align-items: center;
   color: white;
@@ -38,18 +39,42 @@
 .topFiltros {
   height: auto;
   padding: 4em;
+  display: flex;
+  flex-direction: column;
+}
+
+.topFiltros h3 {
+  margin-bottom: 2em;
+  align-self: center;
 }
 
 .filterList {
   display: flex;
-  width: 100vw;
-  height: 120px;
+  width: auto;
+  max-height: 500px;
   align-items: center;
   justify-content: space-around;
 }
 
 .filter {
-  height: 100px;
-  width: 140px;
-  background-color: aquamarine;
+  height: 450px;
+  width: 270px;
+  display: grid;
+  grid-template-rows: 355px 1fr;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: rgb(51 51 51 / 8%) 0px 8px 16px 0px;
+  border-radius: 8px;
+  transition: all 0.3s ease 0s;
+  overflow: hidden;
+}
+
+.filter:hover {
+  transform: scale(1.02);
+  box-shadow: rgb(51 51 51 / 16%) 0px 16px 32px 0px;
+}
+
+.filter img {
+  width: 100%;
+  height: 355px;
 }

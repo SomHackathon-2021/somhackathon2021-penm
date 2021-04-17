@@ -37,12 +37,12 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Nombre de la app</title>
+        <title>Usual</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <header className={styles.cabecera} id="header">
-        <h1>Nombre app</h1>
+        <h1>Usual</h1>
         <Search />
         <div className={styles.register}>
           <button>Registrarse</button>
@@ -60,9 +60,15 @@ export default function Home() {
             {filters.map((filter) => (
               <a href="#" className={styles.filter}>
                 <img src={filter.image}></img>
-                <h4>{filter.name}</h4>
+                <h4>{filter.name.toUpperCase()}</h4>
               </a>
             ))}
+          </div>
+        </div>
+        <div className={styles.banner}>
+          <div className={styles.banner__text}>
+            <h3>Frase sobre el consumo local</h3>
+            <p>Frase más larga sobre nosotros</p>
           </div>
         </div>
       </main>

@@ -1,18 +1,18 @@
 export const filters = [
   {
-    name: "Sushi",
-    image:
-      "https://images.unsplash.com/photo-1563612116625-3012372fccce?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=980&q=80",
-  },
-  {
-    name: "Burgers",
+    name: "Restaurantes",
     image:
       "https://images.unsplash.com/photo-1550547660-d9450f859349?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1001&q=80",
   },
   {
-    name: "Pizza",
+    name: "Productores locales",
     image:
-      "https://images.unsplash.com/photo-1520201163981-8cc95007dd2a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
+      "https://images.unsplash.com/photo-1505210952930-c3e74fb9db61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=948&q=80",
+  },
+  {
+    name: "Fruta y verdura",
+    image:
+      "https://images.unsplash.com/photo-1592801062201-04fd6cf3d5ed?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
   },
   {
     name: "Ropa",

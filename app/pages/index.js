@@ -59,7 +59,7 @@ export default function Home() {
         </div>
         <div className={styles.banner}>
           <div className={styles.banner__text}>
-            <h3>Frase sobre el consumo local</h3>
+            <h3>Frase sobre el consumo local y responsable</h3>
             <p>Frase más larga sobre nosotros</p>
           </div>
         </div>
@@ -88,7 +88,9 @@ export default function Home() {
           </div>
         </div>
         <footer className={styles.footer}>
-          <p> Hola </p>
+          <div className={styles.footer__text}>
+            <p>Copyright © Usual</p>
+          </div>
         </footer>
       </main>
     </div>

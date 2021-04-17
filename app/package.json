@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "push": "git push origin && git push upstream"
+    "push": "git push origin && git fetch && git merge upstream/master main && git push upstream/master"
   },
   "dependencies": {
     "next": "10.1.3",

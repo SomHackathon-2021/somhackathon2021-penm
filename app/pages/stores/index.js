@@ -86,7 +86,7 @@ export default function stores() {
         <div className={styles.filters}>
           {filtros.map((filter) => (
             <>
-              <button key={filter} onClick={openModal}>
+              <button key={filter} onClick={openModal} id={`button${filter}`}>
                 {filter}
               </button>
               <Modal

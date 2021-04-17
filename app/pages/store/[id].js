@@ -1,20 +1,17 @@
-
 import Head from "next/head";
 import Header from "../../components/header";
 import styles from "../../styles/Home.module.css";
 
 export default function store() {
-    return (
-     <>
-    <Header showTransparent={false} />
-    <main>
+  return (
+    <>
+      <Header showTransparent={false} />
+      <main>
         <div className={styles.imagen}></div>
         <div>
-            <h1 className={styles.nombre} >Burguer Mar</h1>
+          <h1 className={styles.nombre}>Burguer Mar</h1>
         </div>
-
-    </main>
-     </>
-    )
-
+      </main>
+    </>
+  );
 }

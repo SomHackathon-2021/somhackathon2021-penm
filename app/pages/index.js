@@ -15,10 +15,13 @@ export default function Home() {
       const window = e.currentTarget;
       const header = document.getElementById("header");
       const landing = document.getElementById("landing");
+      const logo = document.getElementById("logo");
       if (y > landing.offsetHeight - 100) {
         header.className = `${styles.cabecera} ${styles.cabecera__trasparent}`;
+        logo.src = "/logo.png";
       } else {
         header.className = `${styles.cabecera}`;
+        logo.src = "/logo_color.png";
       }
       setY(window.scrollY);
     },
@@ -41,7 +44,7 @@ export default function Home() {
       </Head>
 
       <header className={styles.cabecera} id="header">
-        <img src="/logo.png" />
+        <img src="/logo_color.png" id="logo" />
         <Search />
         <div className={styles.register}>
           <button>Registrarse</button>

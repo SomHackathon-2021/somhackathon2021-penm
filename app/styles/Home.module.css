@@ -49,8 +49,12 @@
   background-size: cover;
   display: grid;
   align-items: center;
-  color: black;
+  color: white;
   padding-left: 5rem;
+}
+
+.landing h2 {
+  font-size: 3em;
 }
 
 .topFiltros {

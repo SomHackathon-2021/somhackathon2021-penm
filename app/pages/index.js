@@ -38,7 +38,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Usual</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="favicon.ico" />
       </Head>
 
       <header className={styles.cabecera} id="header">

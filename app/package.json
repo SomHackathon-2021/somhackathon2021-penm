@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "push": "git push origin && git fetch && git merge upstream/master main && git push upstream/master"
+    "start": "next start"
   },
   "dependencies": {
     "next": "10.1.3",

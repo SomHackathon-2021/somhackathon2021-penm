@@ -46,6 +46,12 @@
   align-items: center;
   box-sizing: border-box;
   position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.store:active {
+  transform: scale(0.95);
 }
 
 .store__img {

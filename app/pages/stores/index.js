@@ -14,7 +14,7 @@ const filtros = ["Tipo", "Super Usual", "Distancia"];
 
 const tiendas = [
   {
-    name: "test",
+    name: "Hamburguesería Don Pepito",
     filtro: "hamburguesería",
     superUsual: { is: true, type: ["SuperProximity"] },
   },

@@ -12,7 +12,7 @@ const Map = dynamic(() => import("../../components/map/index.js"), {
   ssr: false,
 });
 
-const filtros = ["Tipo", "Super Usual", "Distancia"];
+const filtros = ["Tipo", "SuperUsual", "Distancia"];
 
 const tiendas = [
   {
@@ -58,21 +58,23 @@ const tiendas = [
 ];
 
 let customStyles = {
+  overlay: { backgroundColor: "transparent" },
   content: {
     position: "absolute",
     top: "50%",
     left: "50%",
     right: "auto",
     bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
   },
 };
 
 export default function stores() {
   const [modalIsOpen, setIsOpen] = useState(false);
 
-  const openModal = () => {
+  const openModal = (e) => {
+    console.log(e);
+    customStyles.content.top = e.target.offsetTop + 48;
+    customStyles.content.left = e.target.offsetLeft + e.target.clientWidth / 2;
     setIsOpen(true);
   };
 
@@ -94,7 +96,9 @@ export default function stores() {
                 onRequestClose={closeModal}
                 contentLabel="Example Modal"
                 style={customStyles}
-              />
+              >
+                <p>TestTestTestTestTestTestTestTest</p>
+              </Modal>
             </>
           ))}
         </div>

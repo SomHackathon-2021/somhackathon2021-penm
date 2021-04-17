@@ -1,6 +1,6 @@
-export default function store() {
-  import { useRouter } from "next/router";
+import { useRouter } from "next/router";
 
+export default function store() {
   const Post = () => {
     const router = useRouter();
     const { pid } = router.query;

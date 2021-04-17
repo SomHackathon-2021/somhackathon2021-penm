@@ -2,6 +2,8 @@ import styles from "../../styles/Stores.module.css";
 
 import dynamic from "next/dynamic";
 import ReactTooltip from "react-tooltip";
+import { useState } from "react";
+import Modal from "react-modal";
 
 import Header from "../../components/header";
 
@@ -55,14 +57,45 @@ const tiendas = [
   },
 ];
 
+let customStyles = {
+  content: {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+  },
+};
+
 export default function stores() {
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
   return (
     <>
       <Header showTransparent={false} />
       <main className={styles.main}>
         <div className={styles.filters}>
           {filtros.map((filter) => (
-            <button key={filter}>{filter}</button>
+            <>
+              <button key={filter} onClick={openModal}>
+                {filter}
+              </button>
+              <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={closeModal}
+                contentLabel="Example Modal"
+                style={customStyles}
+              />
+            </>
           ))}
         </div>
         <div className={styles.stores}>

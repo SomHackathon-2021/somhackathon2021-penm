@@ -39,15 +39,21 @@
 
 .store {
   width: 100%;
-  height: 350px;
+  height: 330px;
   display: grid;
-  grid-template-rows: 1fr 24px 48px;
+  grid-template-rows: 258px 24px 48px;
   grid-template-columns: 50% 50%;
   align-items: center;
   box-sizing: border-box;
   position: relative;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.store:hover {
+  box-shadow: var(--hover-shadow);
 }
 
 .store:active {
@@ -80,7 +86,7 @@
   width: 48px;
   height: 48px;
   box-sizing: border-box;
-  top: 243px;
+  top: 235px;
   right: 16px;
 }
 

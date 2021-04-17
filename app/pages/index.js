@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 
 import Search from "../components/search";
 
-import { filters } from "../mocks";
+import { filters, bussiness } from "../mocks";
 
 export default function Home() {
   const [y, setY] = useState(null);
@@ -42,7 +42,7 @@ export default function Home() {
       </Head>
 
       <header className={styles.cabecera} id="header">
-        <h1>Usual</h1>
+        <img src="/logo.png" />
         <Search />
         <div className={styles.register}>
           <button>Registrarse</button>
@@ -69,6 +69,24 @@ export default function Home() {
           <div className={styles.banner__text}>
             <h3>Frase sobre el consumo local</h3>
             <p>Frase más larga sobre nosotros</p>
+          </div>
+        </div>
+        <div className={styles.bussiness}>
+          <h3>Únete a los mejores negocios de la zona</h3>
+          <div className={styles.bussiness__list}>
+            {bussiness.map((bussiness) => (
+              <a
+                href="#"
+                className={styles.bussiness__card}
+                key={bussiness.name}
+              >
+                <img src={bussiness.image}></img>
+                <div>
+                  <h4>{bussiness.name}</h4>
+                  <p>{bussiness.description}</p>
+                </div>
+              </a>
+            ))}
           </div>
         </div>
       </main>

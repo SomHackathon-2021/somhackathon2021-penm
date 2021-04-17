@@ -134,13 +134,12 @@
 
 .footer {
   background-color: var(--bdazzled-blue);
-  margin-top: 2em;
   height: 50px;
+  display: grid;
+  place-items: center;
 }
 
-.footer__text{
-  margin-left: 2em;
+.footer__text {
   color: white;
-  padding-top: 1.5em;
   text-align: center;
 }

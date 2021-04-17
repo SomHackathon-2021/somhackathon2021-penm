@@ -14,10 +14,7 @@ export default function header({ showTransparent = true }) {
       id="header"
     >
       <Link href="/">
-        <img
-          src={showTransparent ? "/logo.png" : "/logo_color.png"}
-          id="logo"
-        />
+        <img src="/logo.png" id="logo" />
       </Link>
       <Search />
       <div className={styles.register}>

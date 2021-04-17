@@ -91,6 +91,12 @@ export default function Home() {
             ))}
           </div>
         </div>
+        <div className={`${styles.banner} ${styles.banner__bussiness}`}>
+          <div className={styles.banner__text}>
+            <h3>Frase para los negocios</h3>
+            <p>Frase más larga para los negocios</p>
+          </div>
+        </div>
       </main>
     </div>
   );

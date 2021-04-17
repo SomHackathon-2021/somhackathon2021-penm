@@ -16,9 +16,9 @@ export default function Home() {
       const window = e.currentTarget;
 
       if (window && y > landing.offsetHeight - 100) {
-        setShowTransparent(true);
-      } else {
         setShowTransparent(false);
+      } else {
+        setShowTransparent(true);
       }
       setY(window.scrollY);
     },

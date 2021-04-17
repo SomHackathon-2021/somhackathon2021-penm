@@ -8,8 +8,8 @@ export default function header({ showTransparent = true }) {
     <header
       className={`${styles.cabecera}${
         showTransparent
-          ? " " + styles.cabecera__color
-          : " " + styles.cabecera__trasparent
+          ? " " + styles.cabecera__trasparent
+          : " " + styles.cabecera__color
       }`}
       id="header"
     >

@@ -58,7 +58,7 @@ export default function Home() {
           <h3>Top filtros</h3>
           <div className={styles.filterList}>
             {filters.map((filter) => (
-              <a href="#" className={styles.filter}>
+              <a href="#" className={styles.filter} key={filter.name}>
                 <img src={filter.image}></img>
                 <h4>{filter.name.toUpperCase()}</h4>
               </a>

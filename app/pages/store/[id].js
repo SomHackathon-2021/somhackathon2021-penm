@@ -1,8 +1,20 @@
-import { useRouter } from "next/router";
+
+import Head from "next/head";
+import Header from "../../components/header";
+import styles from "../../styles/Home.module.css";
 
 export default function store() {
-  const router = useRouter();
-  const { pid } = router.query;
+    return (
+     <>
+    <Header showTransparent={false} />
+    <main>
+        <div className={styles.imagen}></div>
+        <div>
+            <h1 className={styles.nombre} >Burguer Mar</h1>
+        </div>
 
-  return <p>Post: {pid}</p>;
+    </main>
+     </>
+    )
+
 }

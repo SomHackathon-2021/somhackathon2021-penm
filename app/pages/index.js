@@ -98,7 +98,9 @@ export default function Home() {
           </div>
         </div>
         <footer className={styles.footer}>
-            <p> Hola </p>
+            <div className={styles.footer__text}>
+                <h4>Copyright © Usual</h4>
+            </div>
         </footer>
       </main>
     </div>

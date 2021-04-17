@@ -2,16 +2,24 @@
   min-height: 100vh;
 }
 
+
+.slogan{
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 20%;
+  text-align: center;
+  color: white;
+}
+
 .landing {
   height: 90vh;
   width: 100vw;
   top: 0;
-  background: url("https://images.unsplash.com/photo-1521017432531-fbd92d768814?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80");
+  background: url("https://images.unsplash.com/photo-1552566626-52f8b828add9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
   align-items: center;
-  color: white;
   padding-left: 5rem;
 }
 

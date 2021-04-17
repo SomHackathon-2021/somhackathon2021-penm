@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Header from "../../components/header";
-import styles from "../../styles/Home.module.css";
+import styles from "../../styles/restaurante.module.css";
 
 export default function store() {
   return (

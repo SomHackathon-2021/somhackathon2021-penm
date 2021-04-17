@@ -43,7 +43,7 @@ export default function Home() {
       <Header showTransparent={showTransparent} />
       <main>
         <div className={styles.landing} id="landing">
-          <h2 className={styles.title}>Frase molona sobre el proyecto</h2>
+            <h2 className={styles.slogan}>COME A MEJOR PRECIO EN TU RESTAURANTE HABITUAL</h2>
         </div>
 
         <div className={styles.topFiltros}>

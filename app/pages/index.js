@@ -60,8 +60,7 @@ export default function Home() {
         </div>
         <div className={styles.banner}>
           <div className={styles.banner__text}>
-            <h3>Frase sobre el consumo local y responsable</h3>
-            <p>Frase más larga sobre nosotros</p>
+            <h3>El consumo local és un factor muy importante para conseguir beneficios ambientales, sociales y económicos</h3>
           </div>
         </div>
         <div className={styles.bussiness}>

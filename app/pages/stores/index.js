@@ -5,7 +5,7 @@ import ReactTooltip from "react-tooltip";
 
 import Header from "../../components/header";
 
-const Map = dynamic(() => import("../../components/Map"), {
+const Map = dynamic(() => import("../../components/Map/index.js"), {
   loading: () => "Loading...",
   ssr: false,
 });

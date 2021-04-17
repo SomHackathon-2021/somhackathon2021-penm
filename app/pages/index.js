@@ -44,7 +44,7 @@ export default function Home() {
       </Head>
 
       <header className={styles.cabecera} id="header">
-        <img src="/logo_color.png" id="logo" />
+        <img src="/logo.png" id="logo" />
         <Search />
         <div className={styles.register}>
           <button>Registrarse</button>

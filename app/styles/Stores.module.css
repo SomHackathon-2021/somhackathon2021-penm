@@ -39,10 +39,49 @@
 
 .store {
   width: 100%;
+  height: 350px;
+  display: grid;
+  grid-template-rows: 1fr 24px 48px;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 
-.store img {
+.store:active {
+  transform: scale(0.95);
+}
+
+.store__img {
   width: 100%;
+  grid-column: 1/3;
+}
+
+.store__filter {
+  padding: 1em;
+  font-size: 12px;
+  font-weight: 300;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.store__name {
+  padding: 1em;
+  font-size: 16px;
+  font-weight: bold;
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.store__superUsual {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
+  top: 243px;
+  right: 16px;
 }
 
 .space {

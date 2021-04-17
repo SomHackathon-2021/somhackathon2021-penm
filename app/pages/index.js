@@ -97,6 +97,7 @@ export default function Home() {
             <p>Frase más larga para los negocios</p>
           </div>
         </div>
+        <footer className={styles.footer}></footer>
       </main>
     </div>
   );

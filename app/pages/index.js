@@ -44,6 +44,7 @@ export default function Home() {
       <main>
         <div className={styles.landing} id="landing">
             <h2 className={styles.slogan}>COME A MEJOR PRECIO EN TU RESTAURANTE HABITUAL</h2>
+          <h3 className={styles.slogan}> Consigue descuentos exlusivos pagando por adelantado tus menús</h3>
         </div>
 
         <div className={styles.topFiltros}>

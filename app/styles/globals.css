@@ -32,6 +32,12 @@ p {
   margin-block-end: unset;
 }
 
+::-webkit-scrollbar {
+  height: 0px;
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
 :root {
   --bdazzled-blue: #3d5a80ff;
   --pale-cerulean: #98c1d9ff;

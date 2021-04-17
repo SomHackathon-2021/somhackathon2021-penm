@@ -3,25 +3,22 @@ import { useState, useCallback, useEffect } from "react";
 
 import styles from "../styles/Home.module.css";
 
-import Search from "../components/search";
+import Header from "../components/header";
 
 import { filters, bussiness } from "../mocks";
 
 export default function Home() {
   const [y, setY] = useState(null);
+  const [showTransparent, setShowTransparent] = useState(true);
 
   const handleNavigation = useCallback(
     (e) => {
       const window = e.currentTarget;
-      const header = document.getElementById("header");
-      const landing = document.getElementById("landing");
-      const logo = document.getElementById("logo");
-      if (y > landing.offsetHeight - 100) {
-        header.className = `${styles.cabecera} ${styles.cabecera__trasparent}`;
-        logo.src = "/logo.png";
+
+      if (window && y > landing.offsetHeight - 100) {
+        setShowTransparent(true);
       } else {
-        header.className = `${styles.cabecera}`;
-        logo.src = "/logo_color.png";
+        setShowTransparent(false);
       }
       setY(window.scrollY);
     },
@@ -43,14 +40,7 @@ export default function Home() {
         <title>Usual</title>
       </Head>
 
-      <header className={styles.cabecera} id="header">
-        <img src="/logo_color.png" id="logo" />
-        <Search />
-        <div className={styles.register}>
-          <button>Registrarse</button>
-          <button>Login</button>
-        </div>
-      </header>
+      <Header showTransparent={showTransparent} />
       <main>
         <div className={styles.landing} id="landing">
           <h2 className={styles.title}>Frase molona sobre el proyecto</h2>
@@ -60,7 +50,7 @@ export default function Home() {
           <h3>Top filtros</h3>
           <div className={styles.filterList}>
             {filters.map((filter) => (
-              <a href="#" className={styles.filter} key={filter.name}>
+              <a href="/stores" className={styles.filter} key={filter.name}>
                 <img src={filter.image}></img>
                 <h4>{filter.name.toUpperCase()}</h4>
               </a>
@@ -98,7 +88,7 @@ export default function Home() {
           </div>
         </div>
         <footer className={styles.footer}>
-            <p> Hola </p>
+          <p> Hola </p>
         </footer>
       </main>
     </div>

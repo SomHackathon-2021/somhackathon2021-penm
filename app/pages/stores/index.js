@@ -16,44 +16,68 @@ const filtros = ["Tipo", "SuperUsual", "Distancia"];
 
 const tiendas = [
   {
-    name: "Hamburguesería Don Pepito",
+    name: "Hamburguesería Can Carreras",
     filtro: "hamburguesería",
     superUsual: { is: true, type: ["SuperProximity"] },
+    direction: "Carrer de Cuba, 22, Mataró",
+    link:
+      "https://images.unsplash.com/photo-1586816001966-79b736744398?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
   },
   {
-    name: "test",
+    name: "Amagatai",
     filtro: "hamburguesería",
     superUsual: { is: false },
+    direction: "Carrer de Sant Josep, 42, Mataró",
+    link:
+      "https://images.unsplash.com/photo-1564362437605-e272fae45979?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1351&q=80",
+  },
+  {
+    name: "Fogons",
+    filtro: "hamburguesería",
+    direction: "Caminet de les Vinyes, 34, Mataró",
+    superUsual: { is: true, type: ["SuperProximity"] },
+    link:
+      "https://images.unsplash.com/photo-1562967914-70f9865b4c2f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fGNhcm5lfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
   },
   {
     name: "test",
     filtro: "hamburguesería",
     superUsual: { is: true, type: ["SuperProximity"] },
+    direction: "Carrer de Cuba, 22, Mataró",
+    link:
+      "https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
   },
   {
     name: "test",
     filtro: "hamburguesería",
     superUsual: { is: true, type: ["SuperProximity"] },
+    direction: "Carrer de Cuba, 22, Mataró",
+    link:
+      "https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
   },
   {
     name: "test",
     filtro: "hamburguesería",
     superUsual: { is: true, type: ["SuperProximity"] },
+    direction: "Carrer de Cuba, 22, Mataró",
+    link:
+      "https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
   },
   {
     name: "test",
     filtro: "hamburguesería",
     superUsual: { is: true, type: ["SuperProximity"] },
+    direction: "Carrer de Cuba, 22, Mataró",
+    link:
+      "https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
   },
   {
     name: "test",
     filtro: "hamburguesería",
     superUsual: { is: true, type: ["SuperProximity"] },
-  },
-  {
-    name: "test",
-    filtro: "hamburguesería",
-    superUsual: { is: true, type: ["SuperProximity"] },
+    direction: "Carrer de Cuba, 22, Mataró",
+    link:
+      "https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
   },
 ];
 
@@ -105,12 +129,10 @@ export default function stores() {
         <div className={styles.stores}>
           {tiendas.map((tienda) => (
             <div className={styles.store} key={tienda.name}>
-              <img
-                className={styles.store__img}
-                src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-              ></img>
+              <img className={styles.store__img} src={tienda.link}></img>
               <p className={styles.store__filter}>{tienda.filtro}</p>
               <p className={styles.store__name}>{tienda.name}</p>
+              <p className={styles.store__direction}>{tienda.direction}</p>
               {tienda.superUsual?.is && (
                 <>
                   <img

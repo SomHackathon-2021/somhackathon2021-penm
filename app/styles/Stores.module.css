@@ -62,11 +62,13 @@
 
 .store__img {
   width: 100%;
+  overflow: hidden;
   grid-column: 1/3;
 }
 
 .store__filter {
   padding: 1em;
+  margin-top: 1em;
   font-size: 12px;
   font-weight: 300;
   grid-column: 1;
@@ -81,13 +83,20 @@
   grid-row: 3;
 }
 
+.store__direction {
+  padding: 1em;
+  font-size: 13px;
+  grid-column: 2;
+  grid-row: 3;
+}
+
 .store__superUsual {
   position: absolute;
   width: 48px;
   height: 48px;
   box-sizing: border-box;
-  top: 235px;
-  right: 16px;
+  bottom: 275px;
+  right: 10px;
 }
 
 .space {

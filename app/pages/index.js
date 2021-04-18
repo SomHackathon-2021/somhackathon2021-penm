@@ -49,7 +49,7 @@ export default function Home() {
               Consigue descuentos exlusivos pagando por adelantado
             </h3>
           </div>
-          <button>Subscribete a tu tienda local favorita</button>
+          <button>Subscribete a tu restaurante local favorito</button>
         </div>
 
         <div className={styles.foodWaste}>

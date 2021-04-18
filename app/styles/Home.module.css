@@ -2,29 +2,106 @@
   min-height: 100vh;
 }
 
-
-.slogan{
+.slogan {
   text-align: center;
   color: white;
   width: 50%;
 }
 
-
 .landing {
   height: 90vh;
   width: 100vw;
+  grid-template-columns: 100%;
   background: url("https://images.unsplash.com/photo-1552566626-52f8b828add9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 9rem;
-  align-items: center;
-  display: flex;
-  justify-content: start;
+  display: grid;
+  place-items: center;
   flex-direction: column;
+}
+
+.landing div {
+  align-self: start;
+  display: grid;
+  place-items: center;
 }
 
 .landing h2 {
   font-size: 3em;
+}
+
+.landing button {
+  height: 64px;
+  border-radius: 20px;
+  border: none;
+  width: 400px;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  align-self: end;
+  justify-content: center;
+  margin-bottom: 3em;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.landing button:active {
+  transform: scale(0.95);
+  box-shadow: var(--shadow-hover);
+}
+
+.foodWaste {
+  height: 600px;
+  grid-template-rows: 60% 40%;
+  display: grid;
+}
+
+.foodWaste__text {
+  max-width: 1200px;
+  align-self: center;
+  justify-self: center;
+}
+
+.foodWaste__cifras {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.foodWaste__text h2 {
+  color: var(--gunmetal);
+  font-size: 58px;
+}
+
+.foodWaste__text h3 {
+  color: var(--pale-cerulean);
+  font-size: 32px;
+}
+
+.foodWaste__text p {
+  padding-top: 2em;
+  color: var(--bdazzled-blue);
+  font-size: 18px;
+}
+
+.foodWaste__card {
+  width: 300px;
+  text-align: center;
+}
+
+.foodWaste__card h3 {
+  font-size: 48px;
+  color: var(--gunmetal);
+}
+
+.foodWaste__card p {
+  color: var(--bdazzled-blue);
+  font-weight: bold;
 }
 
 .topFiltros {
@@ -69,16 +146,6 @@
   height: 355px;
 }
 
-.banner__text {
-  background-color: var(--bdazzled-blue);
-  height: 150px;
-  padding-top: 30px;
-  border-radius: 20px;
-  color: white;
-  text-align: center;
-  width: 70%;
-}
-
 .banner {
   width: 100%;
   display: grid;
@@ -92,6 +159,17 @@
   align-items: center;
   justify-content: start;
   flex-direction: column;
+}
+
+.banner__text {
+  background-color: var(--bdazzled-blue);
+  height: 150px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  width: 70%;
+  display: grid;
+  place-items: center;
 }
 
 .bussiness {
@@ -163,7 +241,3 @@
   color: white;
   text-align: center;
 }
-
-
-
-

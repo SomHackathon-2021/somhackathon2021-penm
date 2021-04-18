@@ -39,3 +39,7 @@
   box-shadow: var(--shadow);
   cursor: pointer;
 }
+
+.register button:active {
+  transform: scale(0.95);
+}

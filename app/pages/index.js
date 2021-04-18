@@ -44,14 +44,12 @@ export default function Home() {
       <main>
         <div className={styles.landing} id="landing">
           <div>
-            <h2 className={styles.slogan}>
-              COME A MEJOR PRECIO EN TU RESTAURANTE HABITUAL
-            </h2>
+            <h2 className={styles.slogan}>AHORRA DINERO MIENTRAS DISFRUTAS</h2>
             <h3 className={styles.slogan}>
-              Consigue descuentos exlusivos pagando por adelantado tus menús
+              Consigue descuentos exlusivos pagando por adelantado
             </h3>
           </div>
-          <button>Subscribete a tu restaurante local favorito</button>
+          <button>Subscribete a tu tienda local favorita</button>
         </div>
 
         <div className={styles.foodWaste}>
@@ -73,7 +71,7 @@ export default function Home() {
           <div className={styles.foodWaste__cifras}>
             <div className={`${styles.foodWaste__card}`}>
               <h3>10%</h3>
-              <p>reducción media en tu ticket de menú</p>
+              <p>reducción media en tus compras habituales</p>
             </div>
             <div className={`${styles.foodWaste__card}`}>
               <h3>1</h3>

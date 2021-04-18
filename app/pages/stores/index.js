@@ -33,51 +33,51 @@ const tiendas = [
   },
   {
     name: "Fogons",
-    filtro: "hamburguesería",
+    filtro: "Mediterránea",
     direction: "Caminet de les Vinyes, 34, Mataró",
     superUsual: { is: true, type: ["SuperProximity"] },
     link:
       "https://images.unsplash.com/photo-1562967914-70f9865b4c2f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fGNhcm5lfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
   },
   {
-    name: "test",
-    filtro: "hamburguesería",
+    name: "El Pont de Pedra",
+    filtro: "Pizzería",
     superUsual: { is: true, type: ["SuperProximity"] },
-    direction: "Carrer de Cuba, 22, Mataró",
+    direction: "Carrer el Carreró, 43, Mataró",
     link:
-      "https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+      "https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
   },
   {
-    name: "test",
-    filtro: "hamburguesería",
+    name: "Restaurant Atahualpa",
+    filtro: "Mediterránea",
     superUsual: { is: true, type: ["SuperProximity"] },
-    direction: "Carrer de Cuba, 22, Mataró",
+    direction: "Carretera de Vilassar, 16, Mataró",
     link:
-      "https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+      "https://images.unsplash.com/photo-1598511726903-ef08ef6eff94?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
   },
   {
-    name: "test",
-    filtro: "hamburguesería",
+    name: "Sangiovese",
+    filtro: "Sushi",
     superUsual: { is: true, type: ["SuperProximity"] },
-    direction: "Carrer de Cuba, 22, Mataró",
+    direction: "Carrer Muralla de Sant Llorenç, 32, Mataró",
     link:
-      "https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+      "https://images.unsplash.com/photo-1593614201641-6f16f8e41a4e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
   },
   {
-    name: "test",
-    filtro: "hamburguesería",
+    name: "2000 Restaurante",
+    filtro: "Mediterránea",
     superUsual: { is: true, type: ["SuperProximity"] },
-    direction: "Carrer de Cuba, 22, Mataró",
+    direction: "Carrer Nàpols, 31, Mataró",
     link:
-      "https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+      "https://images.unsplash.com/photo-1542528180-0c79567c66de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1939&q=80",
   },
   {
-    name: "test",
-    filtro: "hamburguesería",
+    name: "Bar europa",
+    filtro: "Tapas",
     superUsual: { is: true, type: ["SuperProximity"] },
-    direction: "Carrer de Cuba, 22, Mataró",
+    direction: "Camí ral de la Mercè, 22, Mataró",
     link:
-      "https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+      "https://images.unsplash.com/photo-1562967915-92ae0c320a01?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80",
   },
 ];
 
